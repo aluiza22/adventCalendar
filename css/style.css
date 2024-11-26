@@ -90,7 +90,7 @@ textarea {
    header figure {margin: 0; transition: all 0.3s;}  
    header a:hover figure {opacity: 0.8;} 
    header h1, header h2 {font-weight: 200; margin: 0; text-align: right; color: #94C09F; font-size: 15px; line-height: 1;}
-   header h1 {font-family: "Prata", serif; text-transform: uppercase; color: #900C24; font-size: 25px;}
+   header h1 {font-family: "Assistant", serif; text-transform: uppercase; color: #900C24; font-size: 25px; font-weight: 300;}
    header nav {display: flex; justify-content: center; align-items: center; gap: 5px; padding: 10px;}
    header nav svg {fill: #1A8867; width: 40px; height: 40px; transition: all 0.3s;}
    header nav a:hover svg {fill:#8dc4b2;}
@@ -120,7 +120,7 @@ textarea {
     align-items: end;
     justify-content: end;
     padding: 10px;
-    font-family: "Prata", serif;
+    font-family: "Assistant", serif;
     font-size: 48px;
     color: #FADBDE;
     pointer-events: none;
@@ -168,14 +168,14 @@ textarea {
       justify-content: center;
       left: calc((100vw - 312px) / 2);
   }
-  .dayModal {max-width: 312px; background-color: #375A54;background-color: #375A54f5; pointer-events: all; position: absolute; min-height: 100%; top: 0; left: 0; text-align: center;}
-  .modalTop {display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding:10px;}
-  .modalTop h3, .modalTop button.closeModal {margin: 0; font-family: 'Prata', serif; font-size: 24px; font-weight: 400; color: #FFA1AA; transition: color .1s;}
+  .dayModal {max-width: 312px; pointer-events: all; position: absolute;  top: 0; left: 0; text-align: center; background-color: #375a5491; min-height: 100%;}
+  .modalTop {display: flex; align-items: center; justify-content: space-between; padding:10px; background-color: #375A54;}
+  .modalTop h3, .modalTop button.closeModal {margin: 0; font-family: 'Assistant', serif; font-size: 24px; font-weight: 300; color: #FFA1AA; transition: color .1s;}
   .modalTop button.closeModal:hover {color:#d96a75;}
   .modalTop button.closeModal {background: none; border: 0; cursor: pointer;}
-  .modalMain {padding: 0 15px 15px;}
+  .modalMain {padding: 0 15px 15px; background-color: #375A54;}
   .modalMain img {max-width: 100%;}
-  .modalMain h4, .modalMain h5 {font-family: 'Prata', serif; font-size: 25px; color: #fff; font-weight: 200; margin: 20px 0 5px; line-height: 1.2;}
+  .modalMain h4, .modalMain h5 {font-family: 'Assistant', serif; font-size: 25px; color: #fff; font-weight: 500; margin: 20px 0 5px; line-height: 1.2;}
   .modalMain h5 {font-size: 20px; color: #52121D; margin: 0;}
   .modalMain p {color:#C1E0C9; font-size: 18px;}
   .modalMain a {display: inline-block; padding: 10px 20px; background-color: #71A34C; color: #fff; font-weight: bold; font-size: 20px;
@@ -314,8 +314,9 @@ textarea {
   .day:nth-child(20) .flap, .day:nth-child(15) .flap, .day:nth-child(9) .flap, .day:nth-child(2) .flap {background-color:#71A34C;}
   .day:nth-child(6) .flap, .day:nth-child(16) .flap, .day:nth-child(17) .flap, .day:nth-child(1) .flap {background-color:#1A8867;}
 
-  #modals {height: 740px; top: 40px; left: calc((100vw - 795px) / 2); width: calc((120px * 6) + (12px * 4));}
-  .dayModal {width:100%; max-width: 740px; padding: 20px; text-align: left;}
+  #modals {height: 740px; top: 40px; left: calc((100vw - 780px) / 2); width: calc((120px * 6) + (12px * 4));}
+  .dayModal {width:100%; max-width: 740px; padding: 20px; text-align: left; background-color: #375A54; min-height: 100%; z-index: 100000;}
+  .modalTop {margin-bottom: 10px; }
   .modalMain {display: flex; gap: 20px;}
   .modalMain img {align-self: start; max-width: 50%;}
 }

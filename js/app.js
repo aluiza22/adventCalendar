@@ -27,7 +27,7 @@ for (let day of daysContent) {
         div.setAttribute('data-day', day.day);
         div.classList.add('dayModal','hidden');    
         div.innerHTML = 
-            `<div class='modalTop'><h3>#${day.day}</h3><button class='closeModal'>X</button></div><div class='modalMain'><img src='${day.image?day.image:placeholder}' /><div class='dayContent'><h4>${day.short?day.short:''}</h4><h5>${day.topic?day.topic:''}</h5><p>${day.text}</p><a href='${day.link?day.link:'#'}' target='_blank'>${day.cta?day.cta:'mehr lesen'}</a></div></div>`;
+            `<div class='modalTop'><h3>#${day.day}</h3><button class='closeModal'>X</button></div><div class='modalMain'><img src='${day.image?day.image:placeholder}' /><div class='dayContent'><h4>${day.short?day.short:''}</h4><p>${day.text}</p><a href='${day.link?day.link:'https://www.duesseldorf-vegan.de/'}' target='_blank'>${day.cta?day.cta:'Besuche unsere Website'}</a></div></div>`;
         document.querySelector('#modals').appendChild(div); 
         dayDoor.addEventListener('click', showModal);
     } else {
