@@ -86,10 +86,10 @@ textarea {
    /*@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Prata&display=swap');*/
 
    html, body {background-color: #94C09F; margin:0; padding:0; font-family: "Assistant", sans-serif; max-width: 100vw; overflow-x: hidden;}
-   header {background-color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px; width: calc( 100vw - 20px);}
+   header {background-color: #fff; display: flex; justify-content: space-around; align-items: center; padding: 10px; width: calc( 100vw - 20px);}
    header figure {margin: 0; transition: all 0.3s;}  
    header a:hover figure {opacity: 0.8;} 
-   header h1, header h2 {font-weight: 200; margin: 0; text-align: right; color: #94C09F; font-size: 15px; line-height: 1;}
+   header h1, header h2 {font-weight: 200; margin: 0; text-align: center; color: #94C09F; font-size: 15px; line-height: 1;}
    header h1 {font-family: "Assistant", serif; text-transform: uppercase; color: #900C24; font-size: 25px; font-weight: 300;}
    header nav {display: flex; justify-content: center; align-items: center; gap: 5px; padding: 10px;}
    header nav svg {fill: #1A8867; width: 40px; height: 40px; transition: all 0.3s;}
@@ -276,10 +276,10 @@ textarea {
 }
 
 @media only screen and (min-width: 45em) {
-  header {justify-content: space-around; width: calc( 100vw - 20px)}
+  header {width: calc( 100vw - 20px)}
   header figure img {width:91px;height:95px;}
-  header h1 {font-size: 36px; text-align: center;}
-  header h2 {font-size: 20px; text-align: center;}
+  header h1 {font-size: 36px;}
+  header h2 {font-size: 20px;}
   #adventCalendar {
     grid-template-columns: repeat(6, 120px [col-start]);
     grid-template-rows: repeat(6, 120px [row-start]);
